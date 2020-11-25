@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo" />
+        <module name="cloud-server-eureka7001" />
+        <module name="cloud-common" />
+        <module name="cloud-consumer-order80" />
+        <module name="hystrix80" />
+        <module name="spring-cloud-provider-8001" />
+        <module name="cloud-consumer-hystrix80" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud-common" options="-parameters" />
+      <module name="cloud-consumer-hystrix80" options="" />
+      <module name="demo" options="-parameters" />
+    </option>
+  </component>
+</project>
